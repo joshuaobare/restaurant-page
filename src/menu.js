@@ -23,6 +23,8 @@ function createMenu() {
     const heading1 = document.createElement('h1')
     heading1.textContent="MAINS"
 
+    // This renders a heading, text content and an image for 6 menu items then appends them onto
+    // the #content div
     const menuItem1 = document.createElement("div")
     menuItem1.classList.add("menuItem")
     const item1H = document.createElement("h2")
@@ -95,13 +97,7 @@ function createMenu() {
     menuItem6.appendChild(item6P)
     menuItem6.appendChild(img6)
 
-
-
-
-
-
-    
-    
+    // each created element is appended onto the main #content div
     header.appendChild(header1)
     header.appendChild(header2)
     header.appendChild(header3)
