@@ -1,3 +1,5 @@
-import createHome from "./home";
+//import createHome from "./home";
+import createMenu from "./menu"
+import './styles.css'
 
-createHome()
+createMenu()
