@@ -20,6 +20,10 @@ function createMenu() {
     const header3 = document.createElement("div")
     header3.textContent = "Contacts"
 
+    header1.classList.add("hmebtn")
+    header2.classList.add("menubtn")
+    header3.classList.add("contactbtn")
+
     const heading1 = document.createElement('h1')
     heading1.textContent="MAINS"
 

@@ -69,3 +69,11 @@ h2 {
 p {
     text-align: center;
 }
+
+.hmebtn:hover ,
+.menubtn:hover,
+.contactbtn:hover {
+
+    cursor: pointer;
+
+}

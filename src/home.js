@@ -12,6 +12,11 @@ function createHome() {
     header2.textContent = "Menu"
     const header3 = document.createElement("div")
     header3.textContent = "Contacts"
+
+    header1.classList.add("hmebtn")
+    header2.classList.add("menubtn")
+    header3.classList.add("contactbtn")
+
     const mainText = document.createElement("div")
     mainText.classList.add('mainText')
     mainText.textContent = "The Steakhouse is designed to indulge your inner gourmand. We are a modern take on the New York-style steakhouse, offering aged beef, succulent seafood and indulgent desserts paired to perfection with eclectic wines and whiskies from some of the finest producers in the world."
