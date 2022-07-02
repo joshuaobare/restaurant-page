@@ -38,4 +38,4 @@ function createHome() {
 }
 
 
-export default createHome;
+export default createHome();

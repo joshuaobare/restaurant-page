@@ -1,1 +1,3 @@
-alert("Bruuuuh")
+import createHome from "./home";
+
+createHome()
