@@ -9,29 +9,14 @@ function createHome() {
     const cont = document.createElement("div")
     cont.setAttribute("id",'container')
 
-    /*
-    const title = document.createElement("h1")
-    const header = document.createElement("div")
-    header.classList.add("header")
-    title.textContent = "THE STEAKHOUSE"
-    const header1 = document.createElement("div")
-    header1.textContent = "Home"
-    const header2 = document.createElement("div")
-    header2.textContent = "Menu"
-    const header3 = document.createElement("div")
-    header3.textContent = "Contacts"
-
-    header1.classList.add("hmebtn")
-    header2.classList.add("menubtn")
-    header3.classList.add("contactbtn") */
-
+ 
     const heading1 = document.createElement('h1')
     heading1.textContent="A RARE EXPERIENCE"
 
 
     const mainText = document.createElement("p")
     mainText.classList.add('mainText')
-    mainText.textContent = "The Steakhouse is designed to indulge your inner gourmand. We are a modern take on the New York-style steakhouse, offering aged beef, succulent seafood and indulgent desserts paired to perfection with eclectic wines and whiskies from some of the finest producers in the world."
+    mainText.textContent = "The Steakhouse will indulge the foodie in you. This is a modern take on the New York-style steakhouse, offering aged beef, brilliant seafood and decadent desserts paired to perfection with whiskies and wines from the finest producers in the world."
     const hours = document.createElement("div")
     hours.classList.add('hours')
     const topHours = document.createElement("p")
@@ -45,12 +30,7 @@ function createHome() {
     img1.classList.add("normalimg")
     hours.appendChild(topHours)
     hours.appendChild(bottomHours)
-  /*  header.appendChild(header1)
-    header.appendChild(header2)
-    header.appendChild(header3) */
-    
-    //cont.appendChild(title)
-    //cont.appendChild(header)
+ 
     homePage.appendChild(heading1)
     homePage.appendChild(mainText)
     homePage.appendChild(img1)
