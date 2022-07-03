@@ -8,12 +8,13 @@ import image6 from "./images/wingz.jpg"
 function createMenu() {
     const content = document.querySelector("#content")
     const menuPage = document.createElement("div")
-    menuPage.classList.add("menuPage")
+    menuPage.setAttribute("id","menuPage")
     //menuPage.classList.add("hide")
-    menuPage.style.display ="none"
+    //menuPage.style.display ="none"
 
     const cont = document.createElement("div")
-    cont.classList.add('container')
+    cont.setAttribute("id",'container')
+    /*
     const title = document.createElement("h1")
     const header = document.createElement("div")
     header.classList.add("header")
@@ -27,7 +28,7 @@ function createMenu() {
 
     header1.classList.add("hmebtn")
     header2.classList.add("menubtn")
-    header3.classList.add("contactbtn")
+    header3.classList.add("contactbtn") */
 
     const heading1 = document.createElement('h1')
     heading1.textContent="MAINS"
@@ -107,20 +108,20 @@ function createMenu() {
     menuItem6.appendChild(img6)
 
     // each created element is appended onto the main #content div
-    header.appendChild(header1)
+  /*  header.appendChild(header1)
     header.appendChild(header2)
     header.appendChild(header3)
     cont.appendChild(title)
-    cont.appendChild(header)
-    cont.appendChild(heading1)
-    cont.appendChild(menuItem1)
-    cont.appendChild(menuItem2)
-    cont.appendChild(menuItem3)
-    cont.appendChild(menuItem4)
-    cont.appendChild(menuItem5)
-    cont.appendChild(menuItem6)
-    menuPage.appendChild(cont)
-    content.appendChild(menuPage)
+    cont.appendChild(header) */
+    menuPage.appendChild(heading1)
+    menuPage.appendChild(menuItem1)
+    menuPage.appendChild(menuItem2)
+    menuPage.appendChild(menuItem3)
+    menuPage.appendChild(menuItem4)
+    menuPage.appendChild(menuItem5)
+    menuPage.appendChild(menuItem6)
+    cont.appendChild(menuPage)
+    content.appendChild(cont)
 }
 
-export default createMenu();
+export default createMenu;

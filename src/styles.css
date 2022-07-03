@@ -24,10 +24,10 @@ li {
     margin-top: 40px;
     width: 400px;
     text-align: center;
-    color: black;
+    
 }
 
-.container {
+#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,4 +82,15 @@ p {
 
 .show {
     display: block;
+}
+
+#homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 6em;
 }
