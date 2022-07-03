@@ -1,5 +1,8 @@
 function createHome() {
     const content = document.querySelector("#content")
+    const homePage = document.createElement("div")
+    homePage.classList.add("homePage")
+
     const cont = document.createElement("div")
     cont.classList.add('container')
     const title = document.createElement("h1")
@@ -37,10 +40,12 @@ function createHome() {
     cont.appendChild(header)
     cont.appendChild(mainText)
     cont.appendChild(hours)
-    content.appendChild(cont)
+
+    homePage.appendChild(cont)
+    content.appendChild(homePage)
     
 
 }
 
 
-export default createHome();
+export default  createHome();

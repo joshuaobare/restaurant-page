@@ -1,6 +1,10 @@
 function createContacts() {
     document.querySelector("html").style.backgroundSize = "300%"
     const content = document.querySelector("#content")
+    const contactsPage = document.createElement("div")
+    contactsPage.classList.add("contactsPage")
+    //contactsPage.classList.add("hide")
+    contactsPage.style.display ="none"
     const cont = document.createElement("div")
     cont.classList.add('container')
     const title = document.createElement("h1")
@@ -16,7 +20,7 @@ function createContacts() {
     header1.classList.add("hmebtn")
     header2.classList.add("menubtn")
     header3.classList.add("contactbtn")
-    
+
     const heading1 = document.createElement('h1')
     heading1.textContent="PHONES"
 
@@ -38,7 +42,8 @@ function createContacts() {
     cont.appendChild(phones)
     cont.appendChild(heading2)
     cont.appendChild(address)
-    content.appendChild(cont)
+    contactsPage.appendChild(cont)
+    content.appendChild(contactsPage)
 }
 
 export default createContacts();

@@ -7,6 +7,11 @@ import image6 from "./images/wingz.jpg"
 
 function createMenu() {
     const content = document.querySelector("#content")
+    const menuPage = document.createElement("div")
+    menuPage.classList.add("menuPage")
+    //menuPage.classList.add("hide")
+    menuPage.style.display ="none"
+
     const cont = document.createElement("div")
     cont.classList.add('container')
     const title = document.createElement("h1")
@@ -114,7 +119,8 @@ function createMenu() {
     cont.appendChild(menuItem4)
     cont.appendChild(menuItem5)
     cont.appendChild(menuItem6)
-    content.appendChild(cont)
+    menuPage.appendChild(cont)
+    content.appendChild(menuPage)
 }
 
 export default createMenu();
