@@ -1,3 +1,5 @@
+import image from "./images/burger.jpg"
+
 function createHome() {
     document.querySelector("html").style.backgroundSize = "300%"
     const content = document.querySelector("#content")
@@ -24,7 +26,7 @@ function createHome() {
     header3.classList.add("contactbtn") */
 
     const heading1 = document.createElement('h1')
-    heading1.textContent="BEST. STEAK. EVER"
+    heading1.textContent="A RARE EXPERIENCE"
 
 
     const mainText = document.createElement("p")
@@ -38,6 +40,9 @@ function createHome() {
     const bottomHours = document.createElement("p")
     bottomHours.innerHTML = "Sunday: 8am - 8pm <br>    Monday: 6am - 6pm<br>     Tuesday: 6am - 6pm<br>    Wednesday: 6am - 6pm<br>    Thursday: 6am - 10pm<br>     Friday: 6am - 10pm<br>     Saturday: 8am - 10pm<br>"  
     bottomHours.classList.add('bottomHours')
+    const img1 = document.createElement("img")
+    img1.src = image
+    img1.classList.add("normalimg")
     hours.appendChild(topHours)
     hours.appendChild(bottomHours)
   /*  header.appendChild(header1)
@@ -48,6 +53,7 @@ function createHome() {
     //cont.appendChild(header)
     homePage.appendChild(heading1)
     homePage.appendChild(mainText)
+    homePage.appendChild(img1)
     homePage.appendChild(hours)
 
     cont.appendChild(homePage)

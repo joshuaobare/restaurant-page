@@ -6,6 +6,7 @@ import image5 from "./images/sub.jpg"
 import image6 from "./images/wingz.jpg"
 
 function createMenu() {
+    document.querySelector("html").style.backgroundSize = "cover"
     const content = document.querySelector("#content")
     const menuPage = document.createElement("div")
     menuPage.setAttribute("id","menuPage")

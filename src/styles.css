@@ -11,7 +11,8 @@ li {
     justify-content: center;
     gap:100px;
     font-size: 2em;
-    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .hours {
     display: flex;
@@ -21,7 +22,7 @@ li {
 }
 
 .mainText {
-    margin-top: 40px;
+    
     width: 400px;
     text-align: center;
     
@@ -58,6 +59,12 @@ img {
     border: 5px solid black;
 }
 
+.normalimg {
+    width: 600px;
+    height: 300px;
+
+}
+
 .menuItem{
     width: 410px;
 }
@@ -84,7 +91,7 @@ p {
     display: block;
 }
 
-#homePage {
+#homePage,#contactsPage {
     display: flex;
     justify-content: center;
     align-items: center;
